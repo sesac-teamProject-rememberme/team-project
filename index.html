@@ -5,8 +5,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
+    <header class="header">
+        <div class="head">로고
+            <!-- <img src="./image/Group 25.png" style="width: 20%;" /> -->
+        </div>
+        <div class="head2">NOTrash</div>
+        <div class="head2">ABOUT</div>
+        <div class="head2">CAMPAIN</div>
+        <div class="head2">후원하기</div>
+    </header>
     
+    
+        <div class="section1">   
+            <img src="./image/Rectangle 8.png" class="mainimg"/>
+            <img src="./image/Ellipse 6.png" class="mainimg1" />
+            <img src="./image/Ellipse 4.png" class="mainimg2" />
+            <img src="./image/Ellipse 8.png" class="mainimg3" />
+            <div class="dot">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+            </div>
+            <div class="section1_box1">
+               <div class="section1_text">17℃</div>
+               <div class="section1_text2">16℃</div>
+               <div class="section1_text3">17.5℃</div>
+               <div class="section1_text4">
+                <div style="font-size: 3vw;">현재의 온도</div>
+                <br>
+                <div>산업화 이전 지구의 평균 온도는
+                    약 16도 정도이다.</div>
+               </div>
+               <div class="section1_text5">
+                <div style="font-size: 3vw;">과거의 온도</div>
+                <br>
+                <div style="width: 60%;">지구의 평균 온도는 산업화 이전보다 섭씨 1.1도 정도 높아졌다. 이런 온난화 추세가 계속된다면 광범위한 해수면 상승, 중요 생태계 소멸 등의 현상이 초래된다. </div>
+               </div>
+               <div class="section1_text6">very Hot</div>
+            </div>
+            <div class="section1_box2"></div>
+        </div>
+        <div class="section2">
+            <a class="section2_text">No Trash</a>
+          <img src="./image/Group 3.png" style="width: 20%;" class="section2_text2"/>
+        </div>
+        <div class="section3">
+            <video muted autoplay style="width: 100%; height: 100%;">
+                <source src="./image/pexels_videos_2330708 (1080p).mp4" type="video/mp4" >
+              </video>
+              <div class="section3_text">
+                <span style="font-size: 7vw;">BE GREEN</span>
+                <span style="font-size: 3vw;">We always find the answeron earth</span>
+              </div>
+        </div>
+        <div class="section4">
+            <div class="section4_text">
+                <div>일상을 위협하는 지구 온난화</div>
+                <div>그리고 기후 위기</div>
+            </div>
+            <div class="section4_contain">
+                <div class="section4_box1">
+                    <div class="section4_box_text1">연일 지속되는 30도 이상의 폭염</div>
+                    <br>
+                    <div class="section4_box_text2">지난 여름 30도를 넘는 살인적인 더위가 계속되고
+                        온열 질환으로 인한 사망자가 증가 했습니다.
+                        지구온난화 가속화로 인해 해를 거듭할 수록
+                        재난 수준의 폭염 일수가 길어질 것입니다.
+                    </div>
+                </div>
+                <div class="section4_box2">
+
+                    <img src="./image/pawel-czerwinski-Cuujm8Yad7A-unsplash.jpg" style="width: 90%;"/>
+                </div>
+
+            </div>
+            <div class="section4_contain">
+                
+                <div class="section4_box2">
+
+                    <img src="./image/jay-ruzesky-nvBfwtaUBnI-unsplash.jpg" style="width: 90%;"/>
+                </div>
+                <div class="section4_box1">
+                    <div class="section4_box_text1">10년 뒤 한반도의 5%는 바다속으로</div>
+                    <br>
+                    <div class="section4_box_text2">극지방의 해빙속도가 빨라짐에 따라 10년뒤엔
+                        한반도의 5% 면적이 물 속에 잠긴다고
+                        전문가들은 예측하고 있습니다.
+                        하루 빨리 해빙의 속도를 늦춰야 합니다.
+                    </div>
+                </div>
+
+            </div>
+            <div class="section4_contain">
+                <div class="section4_box1">
+                    <div class="section4_box_text1">세계 각지의 잇따른 자연재난(폭우, 산불, 가뭄) </div>
+                    <br>
+                    <div class="section4_box_text2">21년 7월 서유럽에 강타한 기록적 폭우로
+                        최소 183명이 사망했고, 미국에서는 최악의 산불이
+                        20일 이상 이어지며 서울 면적의 1.7배를 초토화 시켰습니다.
+                        이상기후 재난은 한국도 예외는 아닐 것입니다
+                    </div>
+                </div>
+                <div class="section4_box2">
+
+                    <img src="./image/adrian-mag-9l9AIVptuZA-unsplash.jpg" style="width: 90%;"/>
+                </div>
+            </div>
+        </div>
+        <div class="section5">
+            <div class="section5_box1">
+                <img src="./image/Group 25.png" style="width: 100%;"/>
+            </div>
+            <div class="section5_box2">우리 NOT는 환경보존에 대한 정보를 제공하고,
+                업사이클링을 통해 환경을 지킬 것 입니다.
+            </div>
+        </div>
+        <div class="section6">
+            <img src="./image/Group 24.png" style="width: 100%;"/>
+        </div>
+        <div class="section7">
+            <div class="section7_box">"그러나 대다수 사람은 쓰레기 문제의 심각성을 일상에서는 잘 느끼지 못한다. 
+                쓰레기 수거와 처리가 신속하게 진행 돼 
+                쓰레기가 눈에 잘 띄지 않는 도시 주민과 선진국 시민일수록 더욱 그렇다."</div>      
+        </div>
+        <div class="section8">
+            <div class="section8_box">
+                <img src="./image/Group 20.png"   class="section8_img"/>
+                <img src="./image/Group 21.png"  class="section8_img"/>
+                <img src="./image/Group 22.png"   class="section8_img"/>
+               
+            </div>
+        </div>
+        <div class="section9_in">
+            <div class="section9_box">Instagram</div>
+        </div>
+        <div class="section9">
+            <div class="section9_container">
+                <div class="section9_box1">
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                        <img src="./image/72e693acadf8ac2a9f8627628200c924.jpeg" class="section9_img"/>
+                    </div>
+                </div>
+                <div class="section9_box2">
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                        <img src="./image/d842b3211da3bfcd8817063ac52cbe98.jpeg" class="section9_img"/>
+                    </div>
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                        <img src="./image/12110939bba1f7bac76240fb27923f6e.jpeg" class="section9_img"/>
+                    </div>
+                </div>
+                <div class="section9_box3">
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                    </div>
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                    </div>
+                </div>
+                <div class="section9_box4">
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                    </div>
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                    </div>
+                </div>
+                <div class="section9_box5">
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                    </div>
+                    <div class="section9_index1">
+                        <div class="section9_text">NEWS</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
+        <div class=" section10">
+            <img src="./image/Frame 17.png" width="100%"/>
+        </div>
 </body>
 </html>
