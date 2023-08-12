@@ -4,6 +4,7 @@ body {
   max-width: 1920px;
   /* display: flex; */
   /* justify-content: center; */
+  overflow-x: hidden;
 }
 
 .header {
@@ -38,7 +39,7 @@ section {
 }
 
 .shadow_black {
-  box-shadow: #a7a7a789 1px 3px 2px 0px;
+  box-shadow: #707070b6 1px 3px 2px 0px;
 }
 
 /* section1 시작 */
@@ -139,7 +140,7 @@ section {
 
 .sa {
   opacity: 0;
-  /* transition: all 0.5s ease; */
+  transition: all 0.5s ease;
 }
 
 .show {
@@ -170,6 +171,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-color: #fcfcfc; */
 }
 
 .section3 .article3-0 .text_start {
@@ -302,6 +304,14 @@ section {
   column-gap: 30px;
 }
 
+.section4 #cloud {
+  transform: translateY(400px);
+  font-size: 500px;
+  color: #adadad45;
+  position: absolute;
+  z-index: -1;
+}
+
 .section4 .article4-1 {
   margin-top: 30px;
   grid-column: 2/6;
@@ -378,6 +388,14 @@ section {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   column-gap: 30px;
+}
+
+.section5 #trash {
+  transform: translateY(400px);
+  font-size: 500px;
+  color: #adadad45;
+  position: absolute;
+  z-index: -1;
 }
 
 .section5 .article5-1 {
