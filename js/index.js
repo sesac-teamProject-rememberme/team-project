@@ -1,5 +1,6 @@
 const ta = gsap.timeline();
 const tb = gsap.timeline();
+const tc = gsap.timeline();
 
 
 ScrollTrigger.create({
@@ -96,3 +97,20 @@ tb.to(".section2_text",{
 
 
 
+ScrollTrigger.create({
+    trigger:".section4_contain",// 스크롤 기준점
+    animation:tb, // 타임라인
+    start:"top top",
+    end:"bottom 50%",
+    scrub: true,
+    // markers: true,
+    pin: true,
+    })
+
+    tc.to(".section4_box1",{
+        scale: 1,
+        opacity: 1,
+    }).to(".section4_box2",{
+        scale: 1,
+        opacity: 1,
+    }) ; 
