@@ -1,0 +1,214 @@
+
+
+@font-face {
+    font-family: 'IAMAPLAYER';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.p{
+ font-family: 'IAMAPLAYER';
+ border: 2px dashed;
+ padding:  5px;
+ font-size: 4vw;
+ 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
+    
+    color: #1C1C1C;}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    margin-top: 2vw;
+    width: 40vw;
+    height: 40vw;
+}
+#product2 {
+    background-size: contain;
+    opacity: 0.3;
+    border: none;
+}
+
+.output_div_position{
+    position: absolute;
+    font-size: 3vw;
+    position: absolute;
+    cursor: grab;
+}
+
+.color-option {
+ border-radius: 50%;
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+  margin: 5px;
+  cursor: pointer;
+}
+.color-option:hover{
+    border: 1px solid black;
+
+}
+.container{
+    background-color: #F6F6F6;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+   
+}
+.menubar{
+    font-size: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    border-radius: 25px;
+    width: 90%;
+    height: 5vw;
+    background-color: white;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 100%;
+}
+.box2{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100%;
+    width: 40%;
+}
+.box2_contain{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+}
+.box2_contain_text1{
+    font-style: bold;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+    height: 3vw;
+}
+.box2_contain_choice{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 8vw;
+}
+
+.choice-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 19%;
+    height: 7vw;
+    border-radius: 10px;
+}
+.box2_contain_color{
+    display: flex;
+    justify-content: center;
+    height: 3vw;
+}
+.box2_contain_texture{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 4vw;
+}
+
+.texture_option{
+    background-color: white;
+    font-size: 2vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.texture_option:hover{
+    border: 1px solid black;
+}
+
+.buy_box{
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vw;
+}
+.buy{
+    border: none;
+    font-size: 1.5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: black;
+    width: 80%;
+    height: 3.5vw;
+}
+.buy:hover{
+    background-color: gray;
+}
+
+.box2_contain_txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 5vw;
+}
+
+#inputText{
+    font-size: 2vw;
+}
+
+#submitButton{
+    border: none;
+    border-radius: 20px;
+    width: 6vw; 
+    height: 2.5vw;
+    background-color: black;
+    color: white;
+}
+
+.size_option{
+    width: 3vw;
+    background-color: aqua;
+    margin: 1vw;
+}
+
+
+
