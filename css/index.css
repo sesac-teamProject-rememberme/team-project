@@ -14,7 +14,6 @@ body {
 }
 
 section {
-
     width: 100%;
     height: 100%;
     position: absolute; 
@@ -102,11 +101,13 @@ section {
 }
 
 .section1_text4 {
+
   padding: 1vw;
   color: white;
   position: absolute;
   font-size: 2vw;
   opacity: 0;
+
   bottom: 35vw;
   right: 55vw;
 }
@@ -143,6 +144,7 @@ span {
   font-size: 1vw;
 }
 
+
 .mainimg2 {
   opacity: 0;
   width: 35%;
@@ -156,6 +158,7 @@ span {
 }
 
 
+
   .mainimg3{
     opacity: 0;
     position: absolute;
@@ -167,6 +170,7 @@ span {
     opacity: 0;
   }
   
+
 
 
 .dot {
@@ -248,8 +252,10 @@ span {
   height: 45vw;
 }
 
+
 .section4_box1{
   opacity: 0;
+
 
   width: 30%;
 }
@@ -260,8 +266,10 @@ span {
   font-size: 1.5vw;
 }
 
+
 .section4_box2{
   opacity: 0;
+
 
   width: 40%;
   padding-left: 2vw;
@@ -460,4 +468,5 @@ span {
   align-items: center;
   justify-content: center;
 }
+
 
