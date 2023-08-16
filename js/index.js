@@ -1,13 +1,15 @@
 const ta = gsap.timeline();
 const tb = gsap.timeline();
+const tc = gsap.timeline();
+
 
 
 ScrollTrigger.create({
     trigger:".section1",// 스크롤 기준점
     animation:ta, // 타임라인
     start:"top top",
-    end:"bottom 50%",
-    scrub: true,
+    end:"bottom 0%",
+    scrub: 3,
     // markers: true,
     pin: true,
 })
@@ -78,7 +80,7 @@ trigger:".section2",// 스크롤 기준점
 animation:tb, // 타임라인
 start:"top top",
 end:"bottom 50%",
-scrub: true,
+scrub: 1,
 // markers: true,
 pin: true,
 })
@@ -95,4 +97,22 @@ tb.to(".section2_text",{
 
 
 
+ScrollTrigger.create({
+    trigger:".section8",// 스크롤 기준점
+    animation:tc, // 타임라인
+    start:"top top",
+    end:"bottom 50%",
+    scrub: true,
+    // markers: true,
+    pin: true,
+    })
+    tc.to(".section7_box",{
+        scale: 1.2,
+        opacity: 1,
+    }).to(".section8_img",{
+        scale: 1.1,
+        opacity: 1,            
+    });
 
+
+    
