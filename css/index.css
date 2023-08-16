@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'omyu_pretty';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,166 +12,156 @@ body {
 }
 
 section {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-  }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
 
+.header {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #addaf5; */
+  position: fixed;
+  height: 5vw;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
 
-  .header{
-    display: flex;
-    justify-content: space-around;
-    /* background-color: #addaf5; */
-    position: fixed;
-    height: 5vw;
-    display: flex;
-    width: 100%;
-    align-items: center;
-  }
+.head {
+  font-size: 4vw;
+  color: rgb(0, 0, 0);
+}
+.head2 {
+  margin-left: 4vw;
+  font-size: 3vw;
+  font-size: bold;
+  color: rgb(0, 0, 0);
+  /* font-family: 'omyu_pretty'; */
+}
+.head2:hover {
+  font-size: 2.5vw;
+}
+.section1 {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.section1_text {
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: 20vw;
+  opacity: 0;
+  bottom: 1vw;
+  right: 1vw;
+}
+.section1_text2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  font-size: 20vw;
+  font-weight: bold;
+  opacity: 0;
+  bottom: 14vw;
+  right: 1vw;
+}
 
-  .head{
-    font-size: 4vw;
-    color: rgb(0, 0, 0);
+.section1_text3 {
+  color: white;
+  position: absolute;
+  font-size: 20vw;
+  font-weight: bold;
+  opacity: 0;
+  bottom: 30vw;
+  right: 1vw;
+}
 
-  }
-  .head2{
-    margin-left: 4vw;
-    font-size: 3vw;
-    font-size: bold;
-    color: rgb(0, 0, 0);
-    /* font-family: 'omyu_pretty'; */
-  }
-  .head2:hover{
-    font-size: 2.5vw;
-  }
-  .section1{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  .section1_text{
-    color: white;
-    position: absolute;
-    font-weight: bold;
-    font-size: 20vw;
-    opacity: 0;
-    bottom: 1vw;
-    right: 1vw;
-  }
-  .section1_text2{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    position: absolute;
-    font-size: 20vw;
-    font-weight: bold;
-    opacity: 0;
-    bottom: 14vw;
-    right: 1vw;
-  }
+.section1_text4 {
+  padding: 1vw;
+  color: white;
+  position: absolute;
+  font-size: 2vw;
+  opacity: 0;
+  bottom: 35vw;
+  right: 55vw;
+}
 
-  .section1_text3{
-    color: white;
-    position: absolute;
-    font-size: 20vw;
-    font-weight: bold;
-    opacity: 0;
-    bottom: 30vw;
-    right: 1vw;
-  }
+.section1_text5 {
+  padding: 1vw;
+  color: white;
+  position: absolute;
+  font-size: 2vw;
+  opacity: 0;
+  bottom: 20vw;
+  left: 4vw;
+}
 
-  .section1_text4{
-    padding: 1vw;
-    color: white;
-    position: absolute;
-    font-size: 2vw;
-    opacity: 0;
-    bottom: 35vw;
-    right: 55vw;
-  }
+.section1_text6 {
+  color: white;
+  position: absolute;
+  font-size: 10vw;
+  opacity: 0;
+  bottom: 5vw;
+  right: 60vw;
+}
+.section1_box1 {
+  background-color: aqua;
+}
+.mainimg {
+  position: absolute;
+  width: 100%;
+}
 
-  .section1_text5{
-    padding: 1vw;
-    color: white;
-    position: absolute;
-    font-size: 2vw;
-    opacity: 0;
-    bottom: 20vw;
-    left: 4vw;
-  }
+span {
+  color: white;
+  /* font-family: 'omyu_pretty'; */
+  font-size: 1vw;
+}
 
-  .section1_text6{
-    color: white;
-    position: absolute;
-    font-size: 10vw;
-    opacity: 0;
-    bottom: 5vw;
-    right: 60vw;
+.mainimg2 {
+  opacity: 0;
+  width: 35%;
+  animation: rotate_image 6s linear infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
   }
-  .section1_box1{
-    background-color: aqua;
-  }
-  .mainimg{
-    position: absolute;
-    width: 100%;
-  }
+}
 
-  
-  
-  
-  span{
-    color:white;
-    /* font-family: 'omyu_pretty'; */
-    font-size: 1vw;
+.mainimg3 {
+  opacity: 0;
+  position: absolute;
+  width: 45%;
+}
+.mainimg4 {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
 
-  }
-  
-  .mainimg2{
-    opacity: 0;
-    width: 35%;
-    animation: rotate_image 6s linear infinite;
-    transform-origin: 50% 50%;
-  }
-  @keyframes rotate_image{
-    100% {
-        transform: rotate(360deg);
-    }
-  }
-
-  .mainimg3{
-    opacity: 0;
-    position: absolute;
-    width: 45%;
-  }
-  .mainimg4{
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-  }
-  
-  
-  
-  
-  
-
-  .dot{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 1vw;
-    opacity: 1;
-    
-  }
-  .dot1, .dot2, .dot3{
-    border-radius: 50%;
-    margin: 1vw;
-    width: 1vw;
-    height: 1vw;
-    background-color: gray;
-  }
-.section2{
+.dot {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 1vw;
+  opacity: 1;
+}
+.dot1,
+.dot2,
+.dot3 {
+  border-radius: 50%;
+  margin: 1vw;
+  width: 1vw;
+  height: 1vw;
+  background-color: gray;
+}
+.section2 {
   background-color: black;
   width: 100%;
   height: 100%;
@@ -178,18 +169,18 @@ section {
   align-items: center;
   justify-content: center;
 }
-.section2_text{
+.section2_text {
   position: absolute;
   color: rgb(255, 255, 255);
   font-size: 3vw;
 }
-.section2_text2{
+.section2_text2 {
   position: absolute;
   color: rgb(255, 255, 255);
   font-size: 3vw;
   opacity: 0;
 }
-.section3{
+.section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,15 +188,15 @@ section {
   width: 100%;
   height: 100%;
 }
-.section3_text{
+.section3_text {
   text-align: center;
   display: flex;
   flex-direction: column;
   position: absolute;
   color: white;
-  font-style: bold;
+  font-weight: bold;
 }
-.section4{
+.section4 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,7 +204,7 @@ section {
   width: 100%;
   height: 150vw;
 }
-.section4_text{
+.section4_text {
   margin-top: 2vw;
   width: 100%;
   display: flex;
@@ -224,7 +215,7 @@ section {
   color: black;
   font-size: 3vw;
 }
-.section4_contain{
+.section4_contain {
   margin-top: 4vw;
   display: flex;
   align-items: center;
@@ -232,26 +223,22 @@ section {
   width: 90%;
   height: 45vw;
 }
-.section4_box1{
+.section4_box1 {
   width: 30%;
 }
-.section4_box_text1{
+.section4_box_text1 {
   font-size: 2vw;
-  
 }
-.section4_box_text2{
+.section4_box_text2 {
   font-size: 1.5vw;
-
 }
-.section4_box2{
-  
+.section4_box2 {
   width: 40%;
   padding-left: 2vw;
 }
 
-
-.section5{
-  background-color: #E3E5DC;
+.section5 {
+  background-color: #e3e5dc;
   width: 100%;
   height: 30vw;
   display: flex;
@@ -259,38 +246,37 @@ section {
   align-items: center;
   justify-content: center;
 }
-.section5_box1{
+.section5_box1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 20%;
   height: 100%;
-  
 }
-.section5_box2{
+.section5_box2 {
   margin-left: 5vw;
   font-size: 2vw;
   font-style: bold;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   width: 38%;
   height: 100%;
-
 }
-.section6{
+.section6 {
   width: 100%;
 }
-.mainimg1,.mainimg2,.mainimg3{
+.mainimg1,
+.mainimg2,
+.mainimg3 {
   width: 45.5%;
   opacity: 0;
   position: absolute;
 }
 
-
-.section7{
+.section7 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,45 +284,44 @@ section {
   height: 25vw;
 }
 
-.section7_box{
+.section7_box {
   font-size: 2vw;
   text-align: center;
   width: 60%;
 }
 
-.section8{
+.section8 {
   width: 100%;
   height: 60%;
 }
-.section8_box{
+.section8_box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.section8_img{
+.section8_img {
   width: 20%;
 }
 
-.section9_in{
+.section9_in {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 20vw;
-  
 }
-.section9_box{
+.section9_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E3E5DC;
+  background-color: #e3e5dc;
   width: 25vw;
   height: 6vw;
   font-size: 5vw;
   border-radius: 10px;
 }
 
-.section9{
+.section9 {
   background-color: rgb(255, 230, 0);
   display: flex;
   flex-wrap: wrap;
@@ -344,10 +329,10 @@ section {
   justify-content: center;
   width: 100%;
   height: 100%;
-  overflow:scroll;
+  overflow: scroll;
 }
 
-.section9_container{
+.section9_container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -356,7 +341,7 @@ section {
   height: 120%;
   transform: rotate(-10.05deg);
 }
-.section9_box1{
+.section9_box1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -364,43 +349,43 @@ section {
   height: 100%;
 }
 
-.section9_box2{
+.section9_box2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+
   width: 20%;
   height: 100%;
 }
-.section9_box4{
+.section9_box4 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   width: 20%;
   height: 100%;
 }
-.section9_box5{
+.section9_box5 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  
+
   width: 20%;
   height: 100%;
 }
-.section9_box3{
+.section9_box3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  
+
   width: 20%;
   height: 100%;
 }
-.section9_index1{
+.section9_index1 {
   margin: 1vw;
   border-radius: 10px;
   background-color: rgb(168, 164, 164);
@@ -408,21 +393,20 @@ section {
   height: 37%;
 }
 
-
-.section10{
-  background-color: #E3E5DC;
+.section10 {
+  background-color: #e3e5dc;
   width: 100%;
   height: 100%;
 }
 
-.section9_text{
+.section9_text {
   background-color: #ffffff;
   width: 100%;
   height: 3.5vw;
   border-radius: 10px 10px 0 0;
 }
 
-.section9_img{
+.section9_img {
   width: 100%;
   height: 87%;
   border-radius: 0 0 10px 10px;
