@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="../css/diy.css" />
     <script defer src="../js/diy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -13,25 +15,27 @@
                 <div class="info">
                   <img src="../image/free-animated-icon-info-10468726.gif" style="width: 100%;"/>
                 </div>
-
-            </div>
+              </div>
         
-            <div id="product">
+              <div id="product">
                 <div id="product2" style="position: absolute; width: 40vw; height: 40vw; border: none;"></div>
-                <div id="outputDiv"></div>
+                <div id="outputDiv" class="outputDiv"></div>
             </div>
         </div>
         <div class="box2">
             <div class="box2_contain">
+              <div class="box2_contain_scroll">
+
+              
                 <div class="box2_contain_text1">
                     <a style="font-size: 1.5vw;">상품을 선택하세요</a>
                 </div>
                 <div class="box2_contain_choice">
-                    <div class="choice-option" style="background-image: url(../image/free-icon-tshirt-4435416.png); background-size:contain"> 
+                    <div class="choice-option" style="background-image: url(../image/diy2_1.png); background-size:contain"> 
                     </div>
-                    <div class="choice-option" style="background-image: url(../image/free-icon-bag-handle-8258693.png); background-size:contain;">
+                    <div class="choice-option" style="background-image: url(../image/diy3.png); background-size:contain;">
                     </div>
-                    <div class="choice-option" style="background-image: url(../image/free-icon-cap-2806180.png); background-size:contain;">
+                    <div class="choice-option" style="background-image: url(../image/diy4.png); background-size:contain;">
                     </div>
                 </div>
                 <div class="box2_contain_text1">
@@ -48,16 +52,16 @@
                     <a style="font-size: 1.2vw;"> 색상</a>
                 </div>
                 <div class="box2_contain_color">
-                    <div class="color-option" style="background-color: rgba(255, 0, 0, 0.161);"></div>
-                    <div class="color-option" style="background-color: blue;"></div>
-                    <div class="color-option" style="background-color: green;"></div>
-                    <div class="color-option" style="background-color: yellow;"></div>
-                    <div class="color-option" style="background-color: rgb(144, 144, 49);"></div>
-                    <div class="color-option" style="background-color: rgb(34, 34, 8);"></div>
-                    <div class="color-option" style="background-color: rgb(51, 30, 143);"></div>
-                    <div class="color-option" style="background-color: rgb(22, 39, 121);"></div>
-                    <div class="color-option" style="background-color: rgb(142, 24, 181);"></div>
-                    <div class="color-option" style="background-color: rgb(126, 12, 29);"></div>
+                    <div class="color-option" style="background-color: #FD72AC;"></div>
+                    <div class="color-option" style="background-color: black;"></div>
+                    <div class="color-option" style="background-color: #44956E;"></div>
+                    <div class="color-option" style="background-color: #FFED59;"></div>
+                    <div class="color-option" style="background-color: #0F7485;"></div>
+                    <div class="color-option" style="background-color: #3D495A;"></div>
+                    <div class="color-option" style="background-color: #B7B8BD;"></div>
+                    <div class="color-option" style="background-color: #052A53;"></div>
+                    <div class="color-option" style="background-color: #425694;"></div>
+                    <div class="color-option" style="background-color: #A4F3CB;"></div>
                     <div class="color-option" style="background-color: rgb(18, 182, 29);"></div>
                     <div class="color-option" style="background-color: none; border: 1px solid black;"></div>
                 </div>
@@ -67,30 +71,42 @@
 
                 <div class="box2_contain_txt">
                     <input id="inputText" placeholder="" style="width: 23vw; border-radius: 10px;"></input>
-                    <input type="color" id="inputColor"/><br />
+                
 
                     <button id="submitButton">입력하기</button>
                     
+                </div>
+                <div class="box2_contain_text1">
+                  <a style="font-size: 1.2vw;"> 크기 및 색상</a>
+              </div>
+                  <div class="fontoption">
+                    <button id="fontPlus">+</button>
+                    <button id="fontMinus">-</button>
+                    <input type="color" id="inputColor"/><br />
                   </div>
-                  <div> 
-                    <div  class="size_option" style="font-size:4vw">+</div>
-                    <div  class="size_option" style="font-size:1vw">-</div>
-                    <p class="p">asasd</p>
-
-                   
-                  </div>
+                <div class="box2_contain_text1">
+                  <a style="font-size: 1.2vw;"> 서체선택</a>
+              </div>
+              <div class="dropdown">
+                <div class="dropbtn">Dropdown</div>
+                <div class="dropdown-content">
+                  <a class="font-option" data-font="ClimateCrisisKRVF">기후위기-한글체</ㅁ>
+                  <a class="font-option" style="font-family:KBO-Dia-Gothic_bold;">KBO 다이아고딕체</a>
+                  <a class="font-option" data-font="IAMAPLAYER">IAMAPLAYER</a>
+                  <a class="font-option" data-font="Ramche">Ramche</a>
+                </div>
+              </div>
+              
+              </div>  
+                
                 <div class="buy_box">
-                    <button class="buy" onclick="buy();"> 구 매 하 기
-                    </button>
+                    <button class="buy" onclick="buy();"> 구 매 하 기</button>
                 </div>
             </div>
         </div>
     </div>
-   
 
-  <script>
-   
-</script>
+
 </body>
 </html>
 
