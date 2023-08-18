@@ -173,3 +173,25 @@ function buy() {
     }
   });
 }
+
+// 헤더 스크롤 이벤트
+const header = document.querySelector(".header");
+let section1 = document.querySelector(".section1");
+let section2 = document.querySelector(".section2");
+let height1 = section1.offsetHeight;
+let height2 = section2.offsetHeight;
+let h1 = height1;
+let h1_2 = height1 + height2;
+
+window.addEventListener("scroll", () => {
+  if (scrollY <= h1) {
+    header.style.opacity = "1";
+    header.style.transition = "0.5s";
+  } else if (scrollY > h1 && scrollY <= h1_2) {
+    header.style.opacity = "0";
+    header.style.transition = "0.5s";
+  } else if (scrollY > h1_2) {
+    header.style.opacity = "1";
+    header.style.transition = "0.5s";
+  }
+});
