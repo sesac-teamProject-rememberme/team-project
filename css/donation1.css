@@ -1,68 +1,403 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pretendard-Regular", "Noto Sans KR", sans-serif;
 }
 /* -----------------HEADER----------------- */
-header {
-  background-color: white;
-  width: 100%;
-  height: 80px;
-  padding: 0 50px;
-  margin: 0 auto;
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  background-color: #ffffff;
+  position: fixed;
+  height: 5vw;
+  display: flex;
+  width: 100%;
   align-items: center;
 }
-header h1 {
-  position: absolute;
-  left: 50px;
-  top: 15px;
-}
-header ul {
-  list-style: none;
+
+.header {
+  z-index: 2;
+  width: 100%;
+  height: 5.3vw;
   display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
 }
-header .nav1 ul li a {
-  display: inline-block;
-  margin: 0 10px;
-  position: absolute;
-  left: 130px;
-  top: 15px;
+.head_box1 {
+  color: rgb(255, 255, 255);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-header .nav2 ul li a {
-  text-align: right;
-  margin: 50px;
-  right: 50px;
-  top: 30px;
+.head_box1 img {
+  margin: 2vw;
 }
-header .nav2 ul li a:hover {
-  color: green;
+.head_box2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-header .nav2 ul li button {
-  background-color: green;
+.head2 {
+  margin: 2vw;
+  color: rgb(0, 0, 0);
+}
+.head3 {
+  border: none;
+  margin: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6vw;
+  height: 3vw;
   color: white;
-  border-radius: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  background-color: #13ae5c;
+}
+.head_box2 .green:hover {
+  cursor: pointer;
+  color: #13ae5c;
+}
+.head_box2 .campaign:hover {
+  cursor: pointer;
+  color: #13ae5c;
+}
+.head_box2 .donate:hover {
+  cursor: pointer;
+  color: #13ae5c;
+}
+.head_box2 .diy:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s;
 }
 
 /* -----------------MAIN----------------- */
 .container1 {
   width: 100%;
   height: 100%;
+  padding: 5vw 10vw 0 10vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container1 video {
-  background-size: cover;
   width: 100%;
-  height: 100%;
-  top: 50px;
+  height: 50vw;
+  display: flex;
+  object-fit: cover;
 }
 .container1 h1 {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  font-size: 2vw;
+}
+
+.container2 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vw;
+}
+.container2 .line {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #67815b;
+  font-size: 3vw;
+  margin: 8px 0px;
+}
+.container2 .line::before,
+.container2 .line::after {
+  content: "";
+  flex-grow: 1;
+  background: #67815b;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+.container2 h2 hr {
+  border: solid 1px #67815b;
+  width: 100%;
+  display: absolute;
+}
+.container2 .circle {
+  display: flex;
+}
+.container2 .circle .content1 {
+  display: flex;
+  justify-content: center;
+}
+.container2 .circle .content1 .c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container2 ul {
+  width: 21vw;
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container2 ul li {
+  list-style-type: none;
+  margin-top: 1vw;
+  width: 17vw;
+}
+
+.container2 .circle .content2 .c2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .circle .content3 .c3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container2 .circle .content4 .c4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 화살표 */
+.arrow {
+  margin: 10vw 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 2nd content */
+.container3 {
+  width: 80%;
+  height: 100%;
+  margin: 20vw 10vw 10vw 10vw;
+}
+.container3 .search {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #13ae5c;
+  background: #ffffff;
+  display: flex;
+}
+.container3 input {
+  font-size: 16px;
+  width: 95%;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+}
+.container3 button {
+  width: 5%;
+  height: 40px;
+  border: 0px;
+  background: #13ae5c;
+  outline: none;
+  color: #ffffff;
+}
+.container3 .box {
+  display: flex;
+}
+.container3 .box div img {
+  background-size: cover;
+}
+.container3 .box1 {
+  width: 50%;
+  height: 40vw;
+  border: 1px solid #13ae5c;
+  box-sizing: border-box;
+  background-image: url("../image/지구쓰담.png");
+  background-size: cover;
+  background-position: center;
+}
+.container3 .boxupdown {
+  width: 50%;
+}
+.container3 .box2 {
+  height: 20vw;
+  border: 1px solid #13ae5c;
+  box-sizing: border-box;
+  background-image: url("../image/그린피스.png");
+  background-size: cover;
+  background-position: center;
+}
+.container3 .box3 {
+  height: 20vw;
+  border: 1px solid #13ae5c;
+  box-sizing: border-box;
+  background-image: url("../image/환경운동연합.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container4 {
+  margin: 0 auto;
+  padding: 10vw;
+  width: 100%;
+  height: 100%;
+}
+.container4 .text h3 {
+  /*끝에 줄이는 방법 모름*/
+  margin: 0 25vw;
+  padding: 1vw;
+  background-color: #d9d9d9;
+}
+.container4 .text h5 {
+  margin: 2.5vw;
+  font-size: 2vw;
+}
+.container4 .text h5 b {
+  font-weight: bold;
+}
+.container4 .text div i {
+  font-size: 5vw;
+}
+
+.container5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container5 .bigbox {
+  width: 80vw;
+  height: 50vw;
+  border: 1px solid #545454;
+  border-radius: 0.5vw;
+}
+.container5 .bigbox .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5vw;
+}
+.container5 .bigbox .card .card1 {
+  width: 10vw;
+  height: 15vw;
+  border: 5px solid #545454;
+  border-radius: 0.5vw;
+  background-image: url("../image/그린피스.png");
+  background-size: cover;
+}
+.container5 .bigbox .card .card2 {
+  width: 18vw;
+  height: 25vw;
+  border: 5px solid #545454;
+  border-radius: 0.5vw;
+  background-image: url("../image/지구쓰담.png");
+  background-size: cover;
+}
+.container5 .bigbox .card .card3 {
+  width: 10vw;
+  height: 15vw;
+  border: 5px solid #545454;
+  border-radius: 0.5vw;
+  background-image: url("../image/환경운동연합.png");
+  background-size: cover;
+}
+.container5 .bigbox .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container5 .bigbox img {
+  width: 13vw;
+  height: 13vw;
+  margin-top: 2vw;
+  filter: opacity(75%);
+}
+
+.container5 .bigbox .card .card3 .cardimg {
+  background-position: center;
+}
+/* -----------------FOOTER----------------- */
+hr {
+  margin: auto;
+}
+footer {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+footer .f1 {
+  display: flex;
+  height: 100%;
+}
+footer .f1 .teammates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5vw 0 2vw;
+}
+footer .content_center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .f1 .teammates .name1,
+.name2,
+.name3,
+.name4 {
+  font-size: 0.9vw;
+}
+footer .f1 .contect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5vw 0 3vw;
+}
+footer .f1 .contect .insta {
+  font-size: 0.9vw;
+}
+footer .f2 {
+  display: flex;
+}
+footer .f2 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 3vw;
+}
+footer .content_end {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer .f2 .team_name,
+.team_vision {
+  font-size: 1.1vw;
+}
+.color_82 {
+  color: #5a5a5a96;
+}
+.font_600 {
+  font-weight: 600;
 }
