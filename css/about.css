@@ -774,3 +774,7 @@ body {
   font-weight: bold;
   color: #ffffff;
 }
+
+.section10 a {
+  text-decoration: none;
+}
