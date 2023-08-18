@@ -221,19 +221,20 @@ body {
 }
 
 .section3 .article3-5 .temp1-5 {
-  width: 75%;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-right: 3vw;
 }
 
 .section3 .article3-5 .temp1-5 .text_temp1-5 {
   display: flex;
-  margin-right: 20px;
+  margin-right: 1vw;
 }
 
 .section3 .article3-5 .temp1-5 .redLine {
-  width: 60vw;
+  width: 45vw;
   height: 2.4px;
   background-color: #eb2a00;
 }
