@@ -214,15 +214,6 @@ body {
   cursor: move;
 }
 
-/* p {
-    font-family: "Ramche";
-    padding: 5px;
-  }
-  
-  P:hover {
-    border: 2px dashed black;
-  } */
-
 .color-option {
   border-radius: 50%;
   display: inline-block;
