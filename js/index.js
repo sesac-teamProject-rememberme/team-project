@@ -9,8 +9,9 @@ ScrollTrigger.create({
     trigger:".section1",// 스크롤 기준점
     animation:ta, // 타임라인
     start:"top top",
-    end:"bottom 1%",
+    end: "+=5000",
     scrub: 0.5,
+    delay:3,
     // markers: true,
     pin: true,
 })
@@ -68,7 +69,8 @@ ScrollTrigger.create({
 trigger:".section2",// 스크롤 기준점
 animation:tb, // 타임라인
 start:"top top",
-end:"bottom 20%",
+end: "+=5000",
+// end: "bottom 10%",
 scrub: 1,
 // markers: true,
 pin: true,
@@ -92,7 +94,7 @@ tb.to(".section2_text",{
 }).to(".videotext",{
     delay: 1,
     scale: 2,
-    opacity: 1,             
+    opacity: 1,     
 });
 
 
@@ -101,7 +103,7 @@ ScrollTrigger.create({
     trigger:".section8",// 스크롤 기준점
     animation:tc, // 타임라인
     start:"top top",
-    end:"bottom 50%",
+    end: "bottom 50%",
     scrub: true,
     // markers: true,
     pin: true,
@@ -110,7 +112,7 @@ ScrollTrigger.create({
         scale: 1.2,
         opacity: 1,
     }).to(".section8_img",{
-        scale: 1.1,
+        scale: 1,
         opacity: 1,            
     });
 

@@ -27,12 +27,7 @@ body {
   margin: 0;
 }
 
-/* section {
 
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-  } */
 
 .header {
   display: flex;
@@ -176,10 +171,10 @@ body {
   position: absolute;
   font-size: 2vw;
   opacity: 0;
-
+  width: 35%;
   top: 10%;
 
-  right: 55vw;
+  right: 60vw;
 }
 
 .section1_text5 {
@@ -193,9 +188,10 @@ body {
 }
 
 .section1_text6 {
+  width: 35%;
   color: white;
   position: absolute;
-  font-size: 10vw;
+  font-size: 2vw;
   opacity: 0;
   top: 70%;
   right: 60vw;
@@ -254,9 +250,10 @@ span {
   background-color: gray;
 }
 .section2 {
+  z-index: 2;
   background-color: black;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,45 +409,43 @@ span {
   position: absolute;
 }
 
-.section7 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 25vw;
-}
+
 
 .section7_box {
+  display: flex;
   margin-top: 8vw;
   opacity: 0;
   font-size: 2vw;
   text-align: center;
+  justify-content: center;
   width: 60%;
 }
 
 .section8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: max-content;
 }
 .section8_box {
   margin-top: 8vw;
-
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .section8_img {
   opacity: 0;
-  width: 18%;
+  width: 20%;
 }
 
 .section9_in {
-  margin-top: 10vw;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   width: 100%;
-  height: 10vw;
+  height: 20vw;
 }
 .section9_box {
   display: flex;
@@ -461,6 +456,7 @@ span {
   height: 6vw;
   font-size: 5vw;
   border-radius: 10px;
+  margin-bottom: 5vw;
 }
 
 
@@ -492,31 +488,19 @@ span {
 }
 
 
-
-@media all and (max-width: 768px){
-  .section8_box{
-    flex-direction: column;
-  }
-  .section8_img {
-    opacity: 0;
-    width: 50%;
-    padding: 4vw;
-    
-  }
-	
-}
 .container {
-  background-color: rgb(210, 210, 5);
-  height: 120vh;
+  margin-top: 10vw;
+  background-color: #f0f0f0;
+  height: 80vw;
   width: 100%;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  overflow: auto
+  overflow:scroll;
 }
 .border {
-  height: 27vw;
-  width: 18vw;
+  height: 25vw;
+  width: 17vw;
   background: transparent;
   border-radius: 10px;
   transition: border 1s;
@@ -545,8 +529,8 @@ span {
   background-size: 18vw;
 }
 .card0:hover {
-  background: url("../image/jack-finnigan-rriAI0nhcbc-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/jack-finnigan-rriAI0nhcbc-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card0:hover h2 {
   opacity: 1;
@@ -559,8 +543,8 @@ span {
   background-size: 18vw;
 }
 .card1:hover {
-  background: url("../image/jurica-koletic-7YVZYZeITc8-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/jurica-koletic-7YVZYZeITc8-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card1:hover h2 {
   opacity: 1;
@@ -573,8 +557,8 @@ span {
   background-size: 18vw;
 }
 .card2:hover {
-  background: url("../image/taylor-deas-melesh-0WTtJ0bhJcw-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/taylor-deas-melesh-0WTtJ0bhJcw-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card2:hover h2 {
   opacity: 1;
@@ -587,8 +571,8 @@ span {
   background-size: 18vw;
 }
 .card3:hover {
-  background: url("../image/usman-yousaf-6pmG8XIKE2w-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/usman-yousaf-6pmG8XIKE2w-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card3:hover h2 {
   opacity: 1;
@@ -601,8 +585,8 @@ span {
   background-size: 18vw;
 }
 .card4:hover {
-  background: url("../image/leilani-angel-K84vnnzxmTQ-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/leilani-angel-K84vnnzxmTQ-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card4:hover h2 {
   opacity: 1;
@@ -615,8 +599,8 @@ span {
   background-size: 19.5vw;
 }
 .card5:hover {
-  background: url("../image/craig-mckay-jmURdhtm7Ng-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/craig-mckay-jmURdhtm7Ng-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card5:hover h2 {
   opacity: 1;
@@ -629,8 +613,8 @@ span {
   background-size: 18vw;
 }
 .card6:hover {
-  background: url("../image/ransford-quaye-DzAFv1iVMGg-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/ransford-quaye-DzAFv1iVMGg-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card6:hover h2 {
   opacity: 1;
@@ -643,8 +627,8 @@ span {
   background-size: 18vw;
 }
 .card7:hover {
-  background: url("../image/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card7:hover h2 {
   opacity: 1;
@@ -657,8 +641,8 @@ span {
   background-size: 19.5vw;
 }
 .card8:hover {
-  background: url("../image/reza-biazar-eSjmZW97cH8-unsplash.jpg") left center no-repeat;
-  background-size: 28vw;
+  background: url("../image/reza-biazar-eSjmZW97cH8-unsplash.jpg") center center no-repeat;
+  background-size: 22vw;
 }
 .card8:hover h2 {
   opacity: 1;
@@ -737,6 +721,102 @@ h2 {
 
 
 
+@media all and (max-width: 768px){
+  .section2{
+    height: max-content;
+  }
+  .section8_box{
+    flex-wrap: wrap;
+  }
+  .section7_box{
+    opacity: 1;
+  }
+  .section8_img {
+    opacity: 1;
+    width: 32%;
+    padding: 1vw;
+  }
+  .box_con{
+    transform: rotate(0);
+    height: 60vw;
+  }
+	.box2, .box4{
+    justify-content: center;
+  }
+  .container{
+    height: 60vw;
+  }
+}
 
+hr {
+  margin: auto;
+}
+footer {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+footer .f1 {
+  display: flex;
+  height: 100%;
+}
+footer .f1 .teammates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5vw 0 2vw;
+}
+footer .content_center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .f1 .teammates .name1,
+.name2,
+.name3,
+.name4 {
+  font-size: 0.9vw;
+}
+footer .f1 .contect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5vw 0 3vw;
+}
+footer .f1 .contect .insta {
+  font-size: 0.9vw;
+}
+footer .f2 {
+  display: flex;
+}
+footer .f2 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0 3vw;
+}
+footer .content_end {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer .f2 .team_name,
+.team_vision {
+  font-size: 1.1vw;
+}
+.color_82 {
+  color: #5a5a5a96;
+}
+.font_600 {
+  font-weight: 600;
+}
 
 
