@@ -47,13 +47,3 @@ $(document).ready(function () {
     });
   });
 });
-
-$(function () {
-  $("button").click(function () {
-    $(".modal").fadeln();
-  });
-
-  $(".modal_content").click(function () {
-    $(".modal").fadeOut();
-  });
-});
