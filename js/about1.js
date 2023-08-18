@@ -31,22 +31,22 @@ let a0_6 = a0 + a1 + a2 + a3 + a4 + a5 + a6;
 window.addEventListener("wheel", (e) => {
   let wheel = e.wheelDeltaY;
   if (wheel < 0) {
-    if (scrollY > height1 + 200 && scrollY <= a0_1) {
+    if (scrollY > height1 - 200 && scrollY <= a0_1) {
       a3_0.classList.add("show");
     } else if (scrollY > a0_1 + 200 && scrollY <= a0_2) {
       a3_1.classList.add("show");
       a3_0.classList.remove("show");
-      t1.classList.add("font_17");
+      t1.classList.add("font_22");
       t1.style.transition = "0.5s";
     } else if (scrollY > a0_2 + 200 && scrollY <= a0_3) {
       a3_2.classList.add("show");
       a3_1.classList.remove("show");
-      t2.classList.add("font_17");
+      t2.classList.add("font_22");
       t2.style.transition = "0.5s";
     } else if (scrollY > a0_3 + 200 && scrollY <= a0_4) {
       a3_3.classList.add("show");
       a3_2.classList.remove("show");
-      t3.classList.add("font_17");
+      t3.classList.add("font_22");
       t3.style.transition = "0.5s";
     } else if (scrollY > a0_4 + 200 && scrollY <= a0_5) {
       a3_4.classList.add("show");
@@ -61,32 +61,32 @@ window.addEventListener("wheel", (e) => {
       s3.style.opacity = "0";
       s3.style.transition = "0.5s";
     }
-  } else if (wheel > 0) {
-    if (scrollY > height1 + 200 && scrollY <= a0_1) {
+  } else if (wheel >= 0) {
+    if (scrollY > height1 - 200 && scrollY <= a0_1) {
       a3_0.classList.remove("show");
     } else if (scrollY > a0_1 + 200 && scrollY <= a0_2) {
       a3_0.classList.add("show");
       a3_1.classList.remove("show");
-      t1.classList.remove("font_17");
+      t1.classList.remove("font_22");
       t1.style.transition = "0.5s";
     } else if (scrollY > a0_2 + 200 && scrollY <= a0_3) {
       a3_1.classList.add("show");
       a3_2.classList.remove("show");
-      t1.classList.add("font_17");
+      t1.classList.add("font_22");
       t1.style.transition = "0.5s";
-      t2.classList.remove("font_17");
+      t2.classList.remove("font_22");
       t2.style.transition = "0.5s";
     } else if (scrollY > a0_3 + 200 && scrollY <= a0_4) {
       a3_2.classList.add("show");
       a3_3.classList.remove("show");
-      t2.classList.add("font_17");
+      t2.classList.add("font_22");
       t2.style.transition = "0.5s";
-      t3.classList.remove("font_17");
+      t3.classList.remove("font_22");
       t3.style.transition = "0.5s";
     } else if (scrollY > a0_4 + 200 && scrollY <= a0_5) {
       a3_3.classList.add("show");
       a3_4.classList.remove("show");
-      t3.classList.add("font_17");
+      t3.classList.add("font_22");
       t3.style.transition = "0.5s";
     } else if (scrollY > a0_5 + 200 && scrollY <= a0_6) {
       a3_4.classList.add("show");
@@ -404,7 +404,46 @@ window.addEventListener("scroll", () => {
     gray_header.style.opacity = "0";
     gray_header.style.transition = "0.5s";
     section7.style.opacity = "0";
-    header.style.opacity = "0";
+    header.style.opacity = "1";
     section7.style.transition = "0.5s";
+  }
+});
+
+// section8 스크롤 이벤트
+let section8 = document.querySelector(".section8");
+let section9 = document.querySelector(".section9");
+let circle = document.querySelector(".section8 .article8-0 .circle");
+let height8 = section8.offsetHeight;
+let height9 = section9.offsetHeight;
+let h1_8 =
+  height1 + height3 + height4 + height5 + height6 + height7 + height8 - 100;
+let h1_9 =
+  height1 +
+  height3 +
+  height4 +
+  height5 +
+  height6 +
+  height7 +
+  height8 +
+  height9 -
+  300;
+window.addEventListener("wheel", (e) => {
+  let wheel = e.wheelDeltaY;
+  if (wheel < 0) {
+    if (scrollY > h1_8 && scrollY <= h1_9) {
+      circle.style.transform = "scale(10)";
+      circle.style.transition = "0.5s";
+    } else if (scrollY > h1_9) {
+      circle.style.opacity = "0";
+      circle.style.transition = "0.5s";
+    }
+  } else if (wheel > 0) {
+    if (scrollY > h1_8 && scrollY <= h1_9) {
+      circle.style.transform = "scale(1)";
+      circle.style.transition = "0.5s";
+    } else if (scrollY > h1_9) {
+      circle.style.opacity = "1";
+      circle.style.transition = "0.5s";
+    }
   }
 });
