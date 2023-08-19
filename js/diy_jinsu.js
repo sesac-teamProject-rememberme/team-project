@@ -132,17 +132,25 @@
   //글자를 클릭시 isDragging이 true값으로 바뀌면서 outputDiv가 이동가능 해지는 코드
   outputDiv.addEventListener('mousedown', (event) => {
     isDragging = true;
-    offsetX = event.clientX - outputDiv.getBoundingClientRect().left;
-    offsetY = event.clientY - outputDiv.getBoundingClientRect().top;
+    initialX = event.clientX;
+    initialY = event.clientY;
     outputDiv.style.cursor = 'grabbing';
   });
   //outputDiv를 이동시 좌표?
   document.addEventListener('mousemove', (event) => {
     if (!isDragging) return;
-    const x = event.clientX - offsetX;
-    const y = event.clientY - offsetY;
-    outputDiv.style.left = x + 'px';
-    outputDiv.style.top = y + 'px';
+    const offsetX = event.clientX - initialX;
+  const offsetY = event.clientY - initialY;
+  
+  // Calculate the new absolute position
+  const newX = outputDiv.offsetLeft + offsetX;
+  const newY = outputDiv.offsetTop + offsetY;
+
+  outputDiv.style.left = newX + "px";
+  outputDiv.style.top = newY + "px";
+
+  initialX = event.clientX;
+  initialY = event.clientY;
   });
   //글자에서 클릭이 해제 되는 순간  isDragging값이 false값으로 고정
   document.addEventListener('mouseup', () => {
