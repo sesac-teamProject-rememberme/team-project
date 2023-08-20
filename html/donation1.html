@@ -54,6 +54,8 @@
     </header>
     <!-- 메인 -->
     <div class="main">
+      <!-- 위에 공간 추가 -->
+      <div class="container0"></div>
       <div class="container1">
         <div class="inner-wrap">
           <div class="video-wrap">
@@ -63,7 +65,9 @@
               loop
               src="../video/donationinvironmental.mp4"
             ></video>
-            <div class="img"></div>
+            <div class="img">
+              <img class="bg_img" src="../image/parter-bg-naver.png" alt="" />
+            </div>
           </div>
           <div class="text-wrap">
             <div class="text" style="display: block">
@@ -73,25 +77,6 @@
         </div>
       </div>
 
-      <!-- 
-      <div class="container1">
-      <div class="inner-wrap">
-        <div class="video-wrap">
-          <video
-            muted
-            autoplay
-            loop
-            src="../video/donationinvironmental.mp4"
-          ></video>
-          <div class="img"></div>
-        </div>
-        <div class="text-wrap">
-          <h1 class="text">For your Future Environment</h1>
-        </div>
-      </div>
-    </div> 
-  -->
-
       <!-- 당신이 후원을 함으로써 -->
       <section class="container2">
         <h2 style="margin: 20px 0 7vw; text-align: center">
@@ -100,7 +85,6 @@
           </div>
         </h2>
         <div class="circle">
-          <!-- 기후 변화에 대응하며 -->
           <div class="content1">
             <div class="c1" style="text-align: center">
               <div
@@ -132,7 +116,6 @@
               </ul>
             </div>
           </div>
-          <!-- 미세먼지 줄어들고 -->
           <div class="content2">
             <div class="c2" style="text-align: center">
               <div
@@ -164,8 +147,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- 생활속 유해환경 감시 -->
           <div class="content3">
             <div class="c3" style="text-align: center">
               <div
@@ -197,8 +178,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- 생명의 바다를 지키고 -->
           <div class="content4">
             <div class="c4" style="text-align: center">
               <div
@@ -232,7 +211,6 @@
           </div>
         </div>
       </section>
-
       <!-- 화살표 -->
       <section class="arrow">
         <div class="icon">
@@ -243,24 +221,49 @@
           />
         </div>
       </section>
-
       <!-- 후원검색창 -->
       <section class="container3">
         <div class="search">
           <input type="text" placeholder="검색어 입력" />
           <button>
-            <i
-              class="fa-solid fa-magnifying-glass"
-              style="font-size: 2.5vw"
-            ></i>
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 2vw"></i>
           </button>
         </div>
+        <div class="slideshow">
+          <div class="slide">
+            <div class="box-wrap section1">
+              <div class="box section1">
+                <div class="box1"></div>
+                <div class="boxupdown">
+                  <div class="box2"></div>
+                  <div class="box3"></div>
+                </div>
+              </div>
+            </div>
 
-        <div class="box">
-          <div class="box1"></div>
-          <div class="boxupdown">
-            <div class="box2"></div>
-            <div class="box3"></div>
+            <div class="box-wrap section2">
+              <div class="box section2">
+                <div class="box1"></div>
+                <div class="boxupdown">
+                  <div class="box2"></div>
+                  <div class="box3"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-wrap section3">
+              <div class="box section3">
+                <div class="box1"></div>
+                <div class="boxupdown">
+                  <div class="box2"></div>
+                  <div class="box3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="controller">
+            <div class="buttonprev">&lang;</div>
+            <div class="buttonnext">&rang;</div>
           </div>
         </div>
       </section>
@@ -271,7 +274,7 @@
           style="display: flex; flex-direction: column; text-align: center"
         >
           <h3>아직 어디에 후원해야할지 고민이라면?</h3>
-          <h5>여러분을 도울 <b>"후원카드뽑기게임"</b>이 준비되어 있습니다!</h5>
+          <h5>여러분을 도울 "후원카드뽑기게임"이 준비되어 있습니다!</h5>
           <div>
             <i class="fa-solid fa-caret-down" style="color: #13ae5c"></i>
           </div>
@@ -283,16 +286,22 @@
         <div class="bigbox">
           <div class="card">
             <div class="card1">
-              <div class="cardimg"></div>
+              <img style="width: 10vw; height: 15vw" src="WWF.jpg" />
             </div>
             <div class="card2">
-              <div class="cardimg"></div>
+              <img
+                style="width: 18vw; height: 28vw"
+                name="targetimg"
+                src="그린피스.png"
+                onclick="image_onclick()"
+              />
             </div>
             <div class="card3">
-              <div class="cardimg"></div>
+              <img style="width: 10vw; height: 15vw" src="녹색보호.jpg" />
             </div>
           </div>
           <div class="icon"><img src="../image/finger.png" alt="finger" /></div>
+          <div class="text"></div>
         </div>
       </section>
       <br /><br /><br /><br />
