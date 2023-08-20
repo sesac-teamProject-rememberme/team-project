@@ -181,10 +181,12 @@ function buy(){
 const header = document.querySelector(".header");
 let section1 = document.querySelector(".section1");
 let section2 = document.querySelector(".section2");
+let section5 = document.querySelector(".section5");
 let height1 = section1.offsetHeight;
 let height2 = section2.offsetHeight;
+let height3 = section5.offsetHeight;
 let h1 = height1;
-let h1_2 = height1 + height2;
+let h1_2 = height1 + height2 + height3;
 
 window.addEventListener("scroll", () => {
   if (scrollY <= h1) {
