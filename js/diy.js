@@ -1,5 +1,4 @@
- 
- /* 상품 변경값 코드*/
+/* 상품 변경값 코드*/
  //색상 변경 js
  //.color-option을 클릭 시 product의 style.backgroundColor값이 변경
  const productElement = document.getElementById("product");
@@ -34,19 +33,6 @@
    });
  });
 
-//  const productElementFonts = document.getElementById('.box2_contain_text1');
-//  const fontOptions = document.querySelectorAll(".font-option");
- 
-//  fontOptions.forEach(option => {
-//    option.addEventListener("click", () => {
-//      const selectedFont = option.getAttribute("data-font");
-//      productElementFonts.forEach(p => {
-//        p.style.fontFamily = selectedFont;
-//      });
-//    });
-//  });
-
-
 
  /*text 변경 값 코드*/
 
@@ -78,7 +64,7 @@
    
    
     // 새로운 p 요소 생성하여 내용 추가
-    var newParagraph = document.createElement('p');
+    var newParagraph = document.createElement('a');
     // 새로운 p의 요소의 속성
     newParagraph.textContent = inputContent;
     newParagraph.style.color = textColor;
@@ -95,7 +81,7 @@
  var textColor = document.getElementById('inputColor').value;
  var outputDiv = document.getElementById('outputDiv');
  // 마지막으로 추가된 p 요소의 텍스트 색상 변경 코드
- var paragraphs = outputDiv.getElementsByTagName('p');
+ var paragraphs = outputDiv.getElementsByTagName('a');
  if (paragraphs.length > 0) {
      paragraphs[paragraphs.length - 1].style.color = textColor;
  }
@@ -120,7 +106,7 @@
   });
   //+ - 버튼 클릭시 해당 css의 font-size속성값을  수정 코드
   function updateFontSizes() {
-    const paragraphs = outputDiv.getElementsByTagName('p');
+    const paragraphs = outputDiv.getElementsByTagName('a');
     for (let paragraph of paragraphs) {
       paragraph.style.fontSize = currentFontSize + "px";
     }
@@ -132,17 +118,25 @@
   //글자를 클릭시 isDragging이 true값으로 바뀌면서 outputDiv가 이동가능 해지는 코드
   outputDiv.addEventListener('mousedown', (event) => {
     isDragging = true;
-    offsetX = event.clientX - outputDiv.getBoundingClientRect().left;
-    offsetY = event.clientY - outputDiv.getBoundingClientRect().top;
+    initialX = event.clientX;
+    initialY = event.clientY;
     outputDiv.style.cursor = 'grabbing';
   });
   //outputDiv를 이동시 좌표?
   document.addEventListener('mousemove', (event) => {
     if (!isDragging) return;
-    const x = event.clientX - offsetX;
-    const y = event.clientY - offsetY;
-    outputDiv.style.left = x + 'px';
-    outputDiv.style.top = y + 'px';
+    const offsetX = event.clientX - initialX;
+  const offsetY = event.clientY - initialY;
+  
+  // Calculate the new absolute position
+  const newX = outputDiv.offsetLeft + offsetX;
+  const newY = outputDiv.offsetTop + offsetY;
+
+  outputDiv.style.left = newX + "px";
+  outputDiv.style.top = newY + "px";
+
+  initialX = event.clientX;
+  initialY = event.clientY;
   });
   //글자에서 클릭이 해제 되는 순간  isDragging값이 false값으로 고정
   document.addEventListener('mouseup', () => {
@@ -151,7 +145,7 @@
   });
 
 
-const productElementFonts = document.getElementsByTagName('p');
+const productElementFonts = document.getElementsByTagName('a');
 const fontOptions = document.querySelectorAll(".font-option");
 
 fontOptions.forEach(option => {
@@ -181,3 +175,28 @@ function buy(){
     Swal.fire('장바구니 기능은 준비중입니다!', '', 'info')
 }})}
 
+
+
+// 헤더 스크롤 이벤트
+const header = document.querySelector(".header");
+let section1 = document.querySelector(".section1");
+let section2 = document.querySelector(".section2");
+let section5 = document.querySelector(".section5");
+let height1 = section1.offsetHeight;
+let height2 = section2.offsetHeight;
+let height3 = section5.offsetHeight;
+let h1 = height1;
+let h1_2 = height1 + height2 + height3;
+
+window.addEventListener("scroll", () => {
+  if (scrollY <= h1) {
+    header.style.opacity = "1";
+    header.style.transition = "0.5s";
+  } else if (scrollY > h1 && scrollY <= h1_2) {
+    header.style.opacity = "0";
+    header.style.transition = "0.5s";
+  } else if (scrollY > h1_2) {
+    header.style.opacity = "1";
+    header.style.transition = "0.5s";
+  }
+});
