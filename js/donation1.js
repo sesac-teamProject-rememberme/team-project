@@ -10,9 +10,9 @@ let video = document.querySelector("video");
 let text_wrap = document.querySelector(".text_wrap");
 let text = document.querySelector(".text");
 // offsetHeight는 해당 영역의 높이
-let c0 = container0.offsetHeight - 300;
+let c0 = container0.offsetHeight - 200;
 // 300px 뺀거는 스크롤을 container0만큼 다 내리지 않아도 애니메이션 나오게 하려고 한거라 꼭 300이 아니어도 됨(조정 가능)
-let c1_1 = container1.offsetHeight - 600;
+let c1_1 = container1.offsetHeight - 400;
 // 여기서 600뺀거도 마찬가지
 let c1_2 = container1.offsetHeight - 550;
 let h0 = c0;
@@ -22,6 +22,9 @@ let h0_1 = c0 + c1_1;
 let h0_2 = c0 + c1_1 + c1_2;
 // 스크롤 내릴때 y좌표의 값에 따라 애니메이션 부여
 window.addEventListener("scroll", () => {
+  console.log("scroll y" + scrollY);
+  console.log("h0", h0);
+  console.log("h0_1", h0_1);
   if (scrollY <= h0) {
     // 처음에는 동영상 크기 가로로 꽉 차게, 나중에 나타나는 이미지랑 글씨는 opacity 0으로 안보이게
     video.style.transform = "scale(1)";
@@ -45,22 +48,6 @@ window.addEventListener("scroll", () => {
     text.style.transition = "0.5s";
   }
 });
-
-const carousel = document.querySelector(".carousel");
-const box = document.querySelector(".box");
-const slide = document.querySelector(".slide");
-console.log(carousel);
-index = 1;
-index2 = 1;
-carousel.style.cursor = "pointer";
-let boxWidth = box.offsetWidth;
-console.log(boxWidth);
-carousel.addEventListener("click", function () {
-  slide.style.transform = `translate(${-boxWidth * index2}px,0%)`;
-  slide.style.transition = "0.6s cubic-bezier(0, 0.6, 0.4, 1)";
-  index2 += 1;
-});
-
 function image_onclick() {
   var arrImage = new Array(
     "그린피스.png",

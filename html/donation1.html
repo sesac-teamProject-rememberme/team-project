@@ -36,6 +36,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="../css/donation1.css" />
     <script defer src="../js/donation1.js"></script>
   </head>
@@ -55,6 +62,7 @@
     <!-- 메인 -->
     <div class="main">
       <!-- 위에 공간 추가 -->
+      <div class="donationtext">DONATION</div>
       <div class="container0"></div>
       <div class="container1">
         <div class="inner-wrap">
@@ -66,7 +74,7 @@
               src="../video/donationinvironmental.mp4"
             ></video>
             <div class="img">
-              <img class="bg_img" src="../image/parter-bg-naver.png" alt="" />
+              <img class="bg_img" src="../image/parter-bg.png" alt="bg_img" />
             </div>
           </div>
           <div class="text-wrap">
@@ -229,43 +237,56 @@
             <i class="fa-solid fa-magnifying-glass" style="font-size: 2vw"></i>
           </button>
         </div>
-        <div class="grid">
-          <div class="controller">
-            <div class="buttonprev">&lang;</div>
-            <div class="buttonnext">&rang;</div>
-          </div>
-          <div class="carousel" style="border: 1px solid saddlebrown">
-            <div class="slideshow">
-              <div class="slide">
-                <div class="box section1">
-                  <div class="box1">
-                    <img src="../image/지구쓰담.png" alt="" />
-                  </div>
-                  <div class="boxupdown">
-                    <div class="box2">
-                      <img src="../image/그린피스.png" alt="" />
-                    </div>
-                    <div class="box3">
-                      <img src="../image/환경운동연합.png" alt="" />
-                    </div>
-                  </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <div class="box1">
+                <img src="../image/지구쓰담.png" alt="" />
+              </div>
+              <div class="boxupdown">
+                <div class="box2">
+                  <img src="../image/그린피스.png" alt="" />
                 </div>
-
-                <div class="box section2">
-                  <div class="box1">
-                    <img src="../image/아름다운 제단.jpg" alt="" />
-                  </div>
-                  <div class="boxupdown">
-                    <div class="box2">
-                      <img src="../image/위이어.jpg" alt="" />
-                    </div>
-                    <div class="box3">
-                      <img src="../image/자연드림씨앗재단.jpg" alt="" />
-                    </div>
-                  </div>
+                <div class="box3">
+                  <img src="../image/환경운동연합.png" alt="" />
                 </div>
               </div>
             </div>
+            <div class="swiper-slide box">
+              <div class="box1">
+                <img src="../image/아름다운 제단.jpg" alt="" />
+              </div>
+              <div class="boxupdown">
+                <div class="box2">
+                  <img src="../image/위이어.jpg" alt="" />
+                </div>
+                <div class="box3">
+                  <img src="../image/자연드림씨앗재단.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide box">
+              <div class="box1">
+                <img src="../image/WWF.jpg" alt="" />
+              </div>
+              <div class="boxupdown">
+                <div class="box2">
+                  <img src="../image/녹색보호.jpg" alt="" />
+                </div>
+                <div class="box3">
+                  <img src="../image/전국자연보호중앙회.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="arrow-left arrow">
+            <span> < </span>
+          </div>
+          <div class="arrow-right arrow">
+            <span> > </span>
           </div>
         </div>
       </section>
@@ -340,5 +361,28 @@
         </div>
       </article>
     </footer>
+    <script>
+      // swiper
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        loop: true,
+        speed: 1000,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const rightArrow = document.querySelector(".swiper .arrow-right");
+      const swiperNext = document.querySelector(".swiper-button-next");
+      rightArrow.onclick = () => {
+        swiperNext.click();
+      };
+
+      const leftArrow = document.querySelector(".swiper .arrow-left");
+      const swiperPrev = document.querySelector(".swiper-button-prev");
+      leftArrow.onclick = () => {
+        swiperPrev.click();
+      };
+    </script>
   </body>
 </html>
