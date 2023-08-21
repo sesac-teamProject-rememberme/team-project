@@ -86,6 +86,18 @@
      paragraphs[paragraphs.length - 1].style.color = textColor;
  }
  });
+
+ document.getElementById('deleteButton').addEventListener('click', function() {
+  // 마지막으로 추가된 p 요소 가져오기
+  var outputDiv = document.getElementById('outputDiv');
+  var paragraphs = outputDiv.getElementsByTagName('a');
+  
+  // 마지막으로 추가된 p 요소 삭제
+  if (paragraphs.length > 0) {
+      outputDiv.removeChild(paragraphs[paragraphs.length - 1]);
+  }
+});
+
 //fontPlusBtn 이벤트(클릭시 크기 4만큼 증가)
  fontPlusBtn.addEventListener("click", () => {
     currentFontSize += 4;

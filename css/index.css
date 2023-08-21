@@ -170,10 +170,12 @@ body {
 }
 
 .section1_text4_1{
-  font-size: 2vw;
+  font-family: "Pretendard-Regular";
+  font-size: 4vw;
   color: #FCFCFC;
 }
 .section1_text4_2, .section1_text4_3{
+  font-family: "Pretendard-Regular";
   font-size: 1.5vw;
   color: #FCFCFC;
 }
@@ -346,14 +348,17 @@ span {
   height: 25vw;
 }
 .section4_box1{
-  margin-left: 4vw;
-  width: 35%;
+  margin-left: 5vw;
+  width: 30%;
 }
 .section4_box3{
-  margin-right: 4vw;
-  width: 35%;
+  margin-right: 5vw;
+  width: 30%;
 }
 .section4_box_text1 {
+  background-color: #13AE5C;
+  color: #FCFCFC;
+  text-align: center;
   font-family: "Pretendard";
   font-size: 2vw;
 }
@@ -422,11 +427,13 @@ span {
 .section7_box {
   display: flex;
   margin-top: 8vw;
-  opacity: 0;
+  opacity: 1;
   font-size: 1.5vw;
   text-align: center;
   justify-content: center;
   width: 60%;
+  color: #7c7c7c8c;
+  font-style: bold;
 }
 
 .section8 {
@@ -462,7 +469,7 @@ span {
   align-items: center;
   justify-content: center;
   background-color: #e3e5dc;
-  width: 25vw;
+  width: 28vw;
   height: 6vw;
   font-size: 5vw;
   border-radius: 10px;
