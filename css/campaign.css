@@ -615,14 +615,19 @@ input[name="tab_item"] {
   align-items: center;
 }
 
-.up-con9 .box-s img {
+.up-con9 .box-s-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.up-con9 .box-s-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .up-con9 .box-s:hover {
-  border: groove;
   border: 3px solid #13ae5c;
 }
 
