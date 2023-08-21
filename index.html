@@ -1,353 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
-      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script defer src="./js/index.js"></script>
-    <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="head_box1">
-        <a href="../index.html"
-          ><img src="../image/logo.png" style="width: 50%"
-        /></a>
-      </div>
-      <div class="head_box2">
-        <a href="../html/about.html"><div class="head2 about">About</div></a>
-        <a href="../html/campaign.html"
-          ><div class="head2 campaign green">Campaign</div></a
-        >
-        <a href="../html/donation.html"
-          ><div class="head2 donate">후원하기</div></a
-        >
-        <a href="../html/DIY.html"><button class="head3 diy">DIY</button></a>
-      </div>
-    </header>
 
-    <div class="section1">
-      <img src="./image/Rectangle 8.png" class="mainimg" />
-      <img src="./image/Ellipse 6.png" class="mainimg1" />
-      <img src="./image/Ellipse 4.png" class="mainimg2" />
-      <img src="./image/Ellipse 8.png" class="mainimg3" />
-      <div class="dot">
-        <div class="dot1"></div>
-        <div class="dot2"></div>
-        <div class="dot3"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NotTrash</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./js/index.js"></script>
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="icon" href="./image/Group 25.png" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="head_box1">
+      <a href="../index.html"><img src="./image/logo.png" style="width: 50%" /></a>
+    </div>
+    <div class="head_box2">
+      <a href="./html/about.html">
+        <div class="head2 about">About</div>
+      </a>
+      <a href="./html/campaign.html">
+        <div class="head2 campaign green">Campaign</div>
+      </a>
+      <a href="./html/donation.html">
+        <div class="head2 donate">후원하기</div>
+      </a>
+      <a href="./html/DIY.html"><button class="head3 diy">DIY</button></a>
+    </div>
+  </header>
+
+  <div class="section1">
+
+    <img src="./image/Rectangle 8.png" class="mainimg" />
+    <img src="./image/Ellipse 6.png" class="mainimg1" />
+    <img src="./image/Ellipse 4.png" class="mainimg2" />
+    <img src="./image/Ellipse 8.png" class="mainimg3" />
+    <div class="dot">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+      <div class="dot3"></div>
+    </div>
+    <div class="section1_box1">
+      <div class="section1_text0"> 우리가 살아가고 있는 지구</div>
+      <div class="section1_text01">지구에 대해서 얼마나 알고 계신가요?</div>
+      <div class="section1_text">16℃</div>
+      <div class="section1_text2">17℃</div>
+      <div class="section1_text3">17.5℃</div>
+      <div class="section1_text4">
+        <div class="section1_text4_1">과거의 온도</div>
+        <br />
+        <div class="section1_text4_2">
+          산업화 이전 지구의 평균 온도는 약 16도 정도이다.
+        </div>
       </div>
-      <div class="section1_box1">
-        <div class="section1_text">17℃</div>
-        <div class="section1_text2">16℃</div>
-        <div class="section1_text3">17.5℃</div>
-        <div class="section1_text4">
-          <div style="font-size: 2vw; color: white">현재의 온도</div>
-          <br />
-          <div style="font-size: 1.5vw; color: white">
-            산업화 이전 지구의 평균 온도는 약 16도 정도이다.
-          </div>
+      <div class="section1_text5">
+        <div class="section1_text4_1">현재의 온도</div>
+        <br />
+        <div class="section1_text4_2">
+          지구의 평균 온도는 산업화 이전보다 섭씨 1.1도 정도 높아졌다.
+          <br>
+          이런 온난화 추세가 계속된다면 해수면 상승, 생태계 소멸
+          등의 현상이 초래된다.
         </div>
-        <div class="section1_text5">
-          <div style="font-size: 2vw; color: white">과거의 온도</div>
-          <br />
-          <div style="width: 70%; color: white; font-size: 1.5vw">
-            <p style="color: white; font-size: 1.5vw">
-              지구의 평균 온도는 산업화 이전보다 섭씨 1.1도 정도 높아졌다.
-            </p>
-            이런 온난화 추세가 계속된다면 광범위한 해수면 상승, 중요 생태계 소멸
-            등의 현상이 초래된다.
-          </div>
-        </div>
-        <div class="section1_text6">
+      </div>
+      <div class="section1_text6">
+        <div class="section1_text4_1">미래의 온도</div>
+        <br>
+        <div class="section1_text4_2">
           지구의 평균 온도가 1.5도 이상 높아지면,<br />
           지구 생태계에 대한 “사형선고”
         </div>
-      </div>
-      <div class="section1_box2"></div>
-    </div>
-    <div class="section2">
-      <a class="section2_text">NoTrash</a>
-      <img
-        src="./image/Group 3.png"
-        style="width: 20%"
-        class="section2_text2"
-      />
-    </div>
-    <!-- main -->
-    <div class="section3">
-      <video muted autoplay loop class="video">
-        <source
-          src="./image/pexels_videos_2330708 (1440p).mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="videotext">
-        <span style="font-size: 5vw">BE GREEN</span>
-        <span style="font-size: 1vw">We always find the answeron earth</span>
-      </div>
-    </div>
 
-    <div class="section4">
-      <div class="section4_text">
-        <div style="font-size: 5vw">일상을 위협하는 지구 온난화</div>
-        <div style="font-size: 5vw">그리고 기후 위기</div>
-      </div>
-      <div class="section4_contain">
-        <div class="section4_box1">
-          <div class="section4_box_text1">연일 지속되는 30도 이상의 폭염</div>
-          <br />
-          <div class="section4_box_text2">
-            지난 여름 30도를 넘는 살인적인 더위가 계속되고 온열 질환으로 인한
-            사망자가 증가 했습니다. 지구온난화 가속화로 인해 해를 거듭할 수록
-            재난 수준의 폭염 일수가 길어질 것입니다.
-          </div>
-        </div>
-        <div class="section4_box2">
-          <img
-            src="./image/pawel-czerwinski-Cuujm8Yad7A-unsplash.jpg"
-            style="width: 90%"
-          />
-        </div>
-      </div>
-      <div class="section4_contain">
-        <div class="section4_box2">
-          <img
-            src="./image/jay-ruzesky-nvBfwtaUBnI-unsplash.jpg"
-            style="width: 90%"
-          />
-        </div>
-        <div class="section4_box3">
-          <div class="section4_box_text1">10년 뒤 한반도의 5%는 바다속으로</div>
-          <br />
-          <div class="section4_box_text2">
-            극지방의 해빙속도가 빨라짐에 따라 10년뒤엔 한반도의 5% 면적이 물
-            속에 잠긴다고 전문가들은 예측하고 있습니다. 하루 빨리 해빙의 속도를
-            늦춰야 합니다.
-          </div>
-        </div>
-      </div>
-      <div class="section4_contain">
-        <div class="section4_box1">
-          <div class="section4_box_text1">
-            세계 각지의 잇따른 자연재난(폭우, 산불, 가뭄)
-          </div>
-          <br />
-          <div class="section4_box_text2">
-            21년 7월 서유럽에 강타한 기록적 폭우로 최소 183명이 사망했고,
-            미국에서는 최악의 산불이 20일 이상 이어지며 서울 면적의 1.7배를
-            초토화 시켰습니다. 이상기후 재난은 한국도 예외는 아닐 것입니다
-          </div>
-        </div>
-        <div class="section4_box2">
-          <img
-            src="./image/adrian-mag-9l9AIVptuZA-unsplash.jpg"
-            style="width: 90%"
-          />
-        </div>
       </div>
     </div>
-    <div class="section5">
-      <div class="section5_box1">
-        <img src="./image/Group 25.png" style="width: 100%" />
-      </div>
-      <div class="section5_box2">
-        우리 NOT는 환경보존에 대한 정보를 제공하고, 업사이클링을 통해 환경을
-        지킬 것 입니다.
-      </div>
+    <div class="section1_box2"></div>
+  </div>
+  <div class="section2">
+    <a class="section2_text">NoTrash</a>
+    <img src="./image/Group 3.png" style="width: 20%" class="section2_text2" />
+    <video muted autoplay loop class="video">
+      <source src="./image/pexels_videos_2330708 (1440p).mp4" type="video/mp4" />
+    </video>
+    <div class="videotext">
+      <span style="font-size: 5vw">BE GREEN</span>
+      <span style="font-size: 1vw">We always find the answer on earth</span>
     </div>
-    <div class="section6">
-      <video muted autoplay loop style="width: 100%; display: block">
-        <source src="./image/bottle_-_19543 (720p).mp4" type="video/mp4" />
-      </video>
-      <div class="videotext1">
-        <span style="font-size: 7vw">BE BLUE</span>
-        <span style="font-size: 2vw">We always find the answeron earth</span>
-      </div>
-    </div>
+  </div>
+  <!-- main -->
+  <!-- <div class="section3">
+      
+    </div> -->
 
-    <div class="section8">
-      <div class="section7_box">
-        "그러나 대다수 사람은 쓰레기 문제의 심각성을 일상에서는 잘 느끼지
-        못한다. 쓰레기 수거와 처리가 신속하게 진행 돼 <br />쓰레기가 눈에 잘
-        띄지 않는 도시 주민과 선진국 시민일수록 더욱 그렇다."
+  <div class="section4">
+    <div class="section4_text">
+      <div class="ttt">일상을 위협하는 지구 온난화</div>
+      <div class="ttt">그리고 기후 위기</div>
+    </div>
+    <div class="section4_contain">
+      <div class="section4_box1">
+        <div class="section4_box_text1">연일 지속되는 30도 이상의 폭염</div>
+        <br />
+        <div class="section4_box_text2">
+          지난 여름 30도를 넘는 살인적인 더위가 계속되고 온열 질환으로 인한
+          사망자가 증가 했습니다. 지구온난화 가속화로 인해 해를 거듭할 수록
+          재난 수준의 폭염 일수가 길어질 것입니다.
+        </div>
       </div>
-      <div class="section8_box">
-        <img src="./image/Group 20.png" class="section8_img" />
-        <img src="./image/Group 21.png" class="section8_img" />
-        <img src="./image/Group 22.png" class="section8_img" />
+      <div class="section4_box2">
+        <img src="./image/pawel-czerwinski-Cuujm8Yad7A-unsplash.jpg" style="width: 90%" />
       </div>
     </div>
-
-    <div class="section9_in">
-      <div class="section9_box">Instagram</div>
+    <div class="section4_contain2">
+      <div class="section4_box2">
+        <img src="./image/jay-ruzesky-nvBfwtaUBnI-unsplash.jpg" style="width: 90%" />
+      </div>
+      <div class="section4_box3">
+        <div class="section4_box_text1">10년 뒤 한반도의 5%는 바다속으로</div>
+        <br />
+        <div class="section4_box_text2">
+          극지방의 해빙속도가 빨라짐에 따라 10년뒤엔 한반도의 5% 면적이 물
+          속에 잠긴다고 전문가들은 예측하고 있습니다. 하루 빨리 해빙의 속도를
+          늦춰야 합니다.
+        </div>
+      </div>
     </div>
+    <div class="section4_contain">
+      <div class="section4_box1">
+        <div class="section4_box_text1">
+          세계 각지의 잇따른 자연재난
+        </div>
+        <br />
+        <div class="section4_box_text2">
+          21년 7월 서유럽에 강타한 기록적 폭우로 183명이 사망했고,
+          미국에서는 최악의 산불이 20일 이상 <br>이어지며 서울 면적의 1.7배를
+          초토화 시켰습니다.<br>이상기후 재난은 한국도 예외는 아닐 것입니다
+        </div>
+      </div>
+      <div class="section4_box2">
+        <img src="./image/adrian-mag-9l9AIVptuZA-unsplash.jpg" style="width: 90%" />
+      </div>
+    </div>
+  </div>
+  <div class="section5">
+    <div class="section5_box1">
+      <img src="./image/Group 25.png" style="width: 100%" />
+    </div>
+    <div class="section5_box2">
+      우리 NOT는 환경보존에 대한 정보를 제공하고, 업사이클링을 통해 환경을
+      지킬 것 입니다.
+    </div>
+  </div>
+  <div class="section6">
+    <video muted autoplay loop style="width: 100%; display: block">
+      <source src="./image/bottle_-_19543 (720p).mp4" type="video/mp4" />
+    </video>
+    <div class="videotext1">
+      <span style="font-size: 10vw">BE BLUE</span>
+      <span style="font-size: 2vw">We always find the answer on earth</span>
+    </div>
+  </div>
 
-    <div class="container">
-      <div class="box_con">
-        <div class="box">
-          <div class="card card0">
-            <div class="border">
-              <h2>Al Pacino</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box1">
-          <div class="card card1">
-            <div class="border">
-              <h2>Ben Stiller</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card card2">
-            <div class="border">
-              <h2>Patrick Stewart</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box2">
-          <div class="card card3">
-            <div class="border">
-              <h2>Ben Stiller</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card card4">
-            <div class="border">
-              <h2>Patrick Stewart</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box3">
-          <div class="card card5">
-            <div class="border">
-              <h2>Ben Stiller</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card card6">
-            <div class="border">
-              <h2>Patrick Stewart</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box4">
-          <div class="card card7">
-            <div class="border">
-              <h2>Ben Stiller</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card card8">
-            <div class="border">
-              <h2>Patrick Stewart</h2>
-              <div class="icons">
-                <i class="fa fa-codepen" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </div>
+  <div class="section8">
+    <div class="section7_box">
+      "그러나 대다수 사람은 쓰레기 문제의 심각성을 일상에서는 잘 느끼지
+      못한다.<br> 쓰레기 수거와 처리가 신속하게 진행 돼 <br />쓰레기가 눈에 잘
+      띄지 않는 도시 주민과 선진국 시민일수록 더욱 그렇다."
+    </div>
+    <div class="section8_box">
+      <img src="./image/Group 20.png" class="section8_img" />
+      <img src="./image/Group 21.png" class="section8_img" />
+      <img src="./image/Group 22.png" class="section8_img" />
+    </div>
+  </div>
+
+  <div class="section9_in">
+    <div class="section9_box">@Instagram</div>
+  </div>
+
+  <div class="container">
+    <div class="box_con">
+      <div class="box">
+        <div class="card card0">
+          <div class="border">
+            <h2>@Al Pacino</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
             </div>
           </div>
         </div>
       </div>
+      <div class="box1">
+        <div class="card card1">
+          <div class="border">
+            <h2>@Olivia</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="border">
+            <h2>@Ava</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="card card3">
+          <div class="border">
+            <h2>@Amelia</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card card4">
+          <div class="border">
+            <h2>@Jesica</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="card card5">
+          <div class="border">
+            <h2>@Alen walker</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card card6">
+          <div class="border">
+            <h2>@Patrick Stewart</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="card card7">
+          <div class="border">
+            <h2>@Ben Stiller</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card card8">
+          <div class="border">
+            <h2>@Camila</h2>
+            <div class="icons">
+              <i class="fa fa-codepen" aria-hidden="true"></i>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <hr color="#5A5A5A" size="1" />
-    <footer>
-      <article class="f1">
-        <div class="teammates">
-          <p class="color_82 font_600">teammates</p>
-          <div class="content_center">
-            <p class="name1 color_82">오주현</p>
-            <p class="name2 color_82">최가은</p>
-            <p class="name3 color_82">한진수</p>
-            <p class="name4 color_82">서유민</p>
-          </div>
+  <hr color="#5A5A5A" size="1" />
+  <footer>
+    <article class="f1">
+      <div class="teammates">
+        <p class="color_82 font_600">teammates</p>
+        <div class="content_center">
+          <p class="name1 color_82">오주현</p>
+          <p class="name2 color_82">최가은</p>
+          <p class="name3 color_82">한진수</p>
+          <p class="name4 color_82">서유민</p>
         </div>
-        <div class="contect">
-          <p class="color_82 font_600">contect</p>
-          <div class="content_center">
-            <a href="#" class="insta color_82">Instagram</a>
-          </div>
+      </div>
+      <div class="contect">
+        <p class="color_82 font_600">contect</p>
+        <div class="content_center">
+          <a href="#" class="insta color_82">Instagram</a>
         </div>
-      </article>
-      <article class="f2">
-        <div class="page">
-          <div class="content_end">
-            <p class="team_name color_82 font_600">team: 기억해조</p>
-            <p class="team_vision color_82 font_600">
-              환경문제보존에 대한 사회적 가치 만들기
-            </p>
-          </div>
+      </div>
+    </article>
+    <article class="f2">
+      <div class="page">
+        <div class="content_end">
+          <p class="team_name color_82 font_600">team: 기억해조</p>
+          <p class="team_vision color_82 font_600">
+            환경문제보존에 대한 사회적 가치 만들기
+          </p>
         </div>
-      </article>
-    </footer>
-  </body>
+      </div>
+    </article>
+  </footer>
+  <!--중요한 소스 조금 더 빠르게??-->
+  <script>
+    const ta = gsap.timeline();
+    const tb = gsap.timeline();
+    const tc = gsap.timeline();
+    ScrollTrigger.create({
+      trigger: ".section1", // 스크롤 기준점
+      animation: ta, // 타임라인
+      start: "top top",
+      end: "+=8000",
+      scrub: 3,
+      delay: 1,
+      // markers: true,
+      pin: true,
+    })
+
+    ta.to(".mainimg", {
+        width: "50vw",
+        opacity: 1,
+      })
+      .to(".mainimg", {
+        width: "100vw",
+        opacity: 1,
+        transition: "1",
+      }).to(".mainimg", {
+        opacity: 0.5,
+      }).to(".section1_text0", {
+        opacity: 0.5,
+      }).to(".section1_text0", {
+        opacity: 1,
+      }).to(".section1_text0", {
+        opacity: 0.5,
+      }).to(".section1_text0", {
+        opacity: 0,
+      }).to(".section1_text01", {
+        opacity: 1,
+      }).to(".section1_text01", {
+        opacity: 0.5,
+      }).to(".section1_text01", {
+        opacity: 0,
+      }).to(".mainimg", {
+        opacity: 1,
+      }).to(".dot", {
+        opacity: 1,
+      }).to(".dot1", {
+        backgroundColor: "white",
+      }).to(".mainimg1", {
+        scale: 1,
+        opacity: 1,
+      }).to(".section1_text4, .section1_text", {
+        scale: 1,
+        opacity: 1,
+      }).to(".section1_text4, .section1_text", {
+        scale: 1,
+        opacity: 0.5,
+      }).to(".section1_text4, .section1_text", {
+        scale: 1,
+        opacity: 0,
+      }).to(".dot1", {
+        backgroundColor: "gray",
+      }).to(".dot2", {
+        backgroundColor: "white",
+      }).to(".mainimg2", {
+        scale: 1,
+        opacity: 1,
+      }).to(".section1_text5, .section1_text2", {
+        scale: 1,
+        opacity: 1,
+      }).to(".section1_text5, .section1_text2", {
+        scale: 1,
+        opacity: 0.5,
+      }).to(".section1_text5, .section1_text2", {
+        scale: 1,
+        opacity: 0,
+      }).to(".dot2", {
+        backgroundColor: "gray",
+      }).to(".dot3", {
+        backgroundColor: "white",
+      }).to(".mainimg3", {
+        scale: 1,
+        opacity: 1,
+      }).to(".section1_text6, .section1_text3", {
+        scale: 1,
+        opacity: 1,
+      }).to(".section1_text6, .section1_text3", {
+        scale: 1,
+        opacity: 0.5,
+      }).to(".section1_text6, .section1_text3", {
+        scale: 1,
+        opacity: 0,
+      }).to(".dot", {
+        scale: 1,
+        opacity: 0,
+      });
+
+    ScrollTrigger.create({
+      trigger: ".section2", // 스크롤 기준점
+      animation: tb, // 타임라인
+      start: "top top",
+      end: "+=4000",
+      // end: "bottom 10%",
+      scrub: 1,
+      // markers: true,
+      pin: true,
+    })
+    tb.to(".section2_text", {
+      scale: 7,
+    }).to(".section2_text", {
+      scale: 7,
+      opacity: 0,
+    }).to(".section2_text2", {
+      scale: 2,
+      opacity: 1,
+    }).to(".section2_text2", {
+      scale: 2,
+      opacity: 0,
+    }).to(".video, .section2", {
+      opacity: 1,
+      backgroundColor: "#FCFCFC",
+    }).to(".videotext", {
+      scale: 2,
+      opacity: 1,
+    });
+
+    ScrollTrigger.create({
+      trigger: ".section8", // 스크롤 기준점
+      animation: tc, // 타임라인
+      start: "top top",
+      end: "bottom 50%",
+      scrub: true,
+      // markers: true,
+      pin: true,
+    })
+    tc.to(".section7_box", {
+      scale: 1.2,
+      opacity: 1,
+      color:"#13ae5c",
+    }).to(".section8_img", {
+      scale: 1,
+      opacity: 1,
+    });
+  </script>
+</body>
+
 </html>
